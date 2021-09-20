@@ -1,0 +1,1663 @@
+<!doctype html>
+<!-- Codage en AMP -->
+<html amp lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Script AMP -->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+
+  <title>Olivier.</title>
+
+  <!-- Renvoie vers lui même car aucun fichier HTML classique -->
+  <link rel="canonical" href="localhost/projet_parrain/index.amp.html">
+
+  <!-- Preload les images pour gagner du temps de chargement -->
+
+
+  <!-- Polices link avec Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Script json pour l'AMP -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Open-source framework for publishing content",
+      "datePublished": "2015-10-07T12:02:41Z",
+      "image": [
+        "logo.jpg"
+      ]
+    }
+  </script>
+
+  <!-- Style propre à une page AMP -->
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <style amp-custom>
+    /* any custom style goes here */
+    /* Réinitialisation des marges et padding */
+    * {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      color: white;
+    }
+
+    /* Couleur du fond et padding général */
+    body {
+      background-color: #232323;
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    /* Passage du header en display flex afin d'aligner les éléments */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    /* font-family: 'Inter', sans-serif; font-family: 'Roboto', sans-serif; */
+
+    /* Style du titre */
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+
+    /* Style de tous les p */
+    p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.5rem;
+    }
+
+    /* Style du premier p */
+    main>section:nth-child(1)>div>p {
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0.25rem;
+      margin-bottom: unset;
+    }
+
+
+    /* Style et marge de toutes les barres */
+    hr {
+      border: 1px solid #F87F28;
+      width: 4.5rem;
+      margin-bottom: 1.625rem;
+      margin-top: 0.75rem;
+      background-color: #F87F28;
+    }
+
+    main>section:nth-child(1) hr {
+      margin-top: 0.875rem;
+    }
+
+    main>section:nth-child(2)>div:nth-child(1) hr {
+      margin-top: 1.0625rem;
+    }
+
+    main>section:nth-child(5) hr {
+      margin-bottom: 2.4375rem;
+      margin-top: 1rem;
+    }
+
+    /* Style de la phrase de présentation */
+    h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.5rem;
+      letter-spacing: -3px;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Style du Olivier. */
+    h2 span:nth-child(2) {
+      color: #F87F28;
+      font-weight: 700;
+      font-size: 4rem;
+      letter-spacing: -1px;
+    }
+
+    /* Style des deux derniers paragraphes de la première page (sur mobile) */
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    /* Style des deux boutons de la page d'accueil */
+    main>section:nth-child(1)>div:nth-child(1)>ul {
+      display: flex;
+      flex-direction: row;
+      padding-right: 2.5rem;
+    }
+
+    /* Style des boutons */
+    button {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      background-color: #BB2323;
+      border: 2px solid #BB2323;
+      border-radius: 9999px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      margin-bottom: 2.75rem;
+    }
+
+    li>button {
+      margin-top: 0.5rem;
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 4.5rem;
+    }
+
+    section li:nth-child(1) button {
+      margin-right: 1.5rem;
+    }
+
+    section li:nth-child(2) button {
+      background-color: unset;
+      border: 2px solid #F87F28;
+      color: #F87F28;
+    }
+
+    /* Style des Clients */
+    h4 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      color: #BFBFBF;
+      margin-bottom: 2rem;
+    }
+
+    main>section:nth-child(1)>div>ul {
+      display: grid;
+      grid-template-rows: 1fr 0.5fr 0.5fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      margin-bottom: 3rem;
+    }
+
+    /* Style de la page Compétences */
+    h5 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 2.25rem;
+      margin-top: 1rem;
+      line-height: 3.75rem;
+    }
+
+    li>h6 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    main>section:nth-child(2)>div:nth-child(1) li>p {
+      color: #767e90
+    }
+
+    /* Style de la page Portfolio */
+    main>section:nth-child(2)>div:nth-child(2) ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10.75rem 16.5rem 16.5rem 16.5rem 16.5rem 16.5rem;
+      row-gap: 1.75rem;
+    }
+
+    main>section:nth-child(2)>div:nth-child(2)>ul>li {
+      position: relative;
+    }
+
+    main>section:nth-child(2)>div:nth-child(2)>ul>li>amp-img>img {
+      object-fit: cover;
+    }
+
+    main>section:nth-child(2)>div:nth-child(2)>ul>li>amp-img {
+      border-radius: 20px;
+    }
+
+    /* Style de la page Experiences */
+    main>section:nth-child(3)>ul li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 1.625rem;
+      row-gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    main>section:nth-child(3)>div>p {
+      padding-right: 4.75rem;
+    }
+
+
+    main>section:nth-child(3) h4 {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0;
+      letter-spacing: 2px;
+    }
+
+    main>section:nth-child(3) h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      grid-column: 2 / 3;
+      margin-bottom: 0;
+    }
+
+    /* Style de la page Témoignages */
+    main>section:nth-child(5) p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.3125rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 2.25rem;
+      margin-bottom: 1.9375rem;
+    }
+
+    main>section:nth-child(5) h3 {
+      font-weight: 700;
+      font-size: 1.125rem;
+      margin-bottom: 0.625rem;
+    }
+
+    main>section:nth-child(5)>div h5 {
+      margin-top: 0;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+      font-size: 0.9375rem;
+      margin-bottom: 4.125rem;
+      line-height: unset;
+    }
+
+    /* Style de la page Actualités */
+    li>h5 {
+      color: #F87F28;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 0.5625rem;
+      line-height: unset;
+    }
+
+    main>section:nth-child(6) li>h3 {
+      font-weight: 700;
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+      margin-bottom: 1.625rem;
+    }
+
+    main>section:nth-child(6) li>p {
+      margin-bottom: 2.125rem;
+    }
+
+    main>section:nth-child(6) li:nth-of-type(1)>p {
+      padding-right: 6.5rem;
+      word-wrap: break-word;
+    }
+
+    main>section:nth-child(6) li:nth-of-type(2)>p {
+      padding-right: 6.5rem;
+    }
+
+    main>section:nth-child(6) li:nth-of-type(3)>p>span {
+      word-break: break-all;
+    }
+
+    main>section:nth-child(6) li:nth-of-type(3)>p {
+      margin-bottom: 5rem;
+    }
+
+    /* Style de la page Contact */
+
+    main>ul>li:nth-child(1)>section h5 {
+      color: #BFBFBF;
+      margin-bottom: 2.625rem;
+    }
+
+    main>ul>li:nth-child(1)>section li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 1.5rem;
+      align-items: center;
+    }
+
+    main>ul>li:nth-child(1)>section li:nth-of-type(1) {
+      grid-template-rows: auto auto auto;
+    }
+
+    main>ul>li:nth-child(1)>section li amp-img {
+      grid-row: 1 / span 3;
+      grid-column: 1 / span 1;
+      align-self: flex-start;
+    }
+
+    main>ul>li:nth-child(1)>section li h6 {
+      color: #F87F28;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: -0.01rem;
+      margin-bottom: 0.375rem;
+      grid-row: 1 / span 1;
+      grid-column: 2 / 3;
+    }
+
+    main>ul>li:nth-child(1)>section li p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    main>ul>li:nth-child(1)>section li:nth-of-type(1) p:nth-of-type(1) {
+      margin-bottom: 0;
+      grid-row: 2 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    main>ul>li:nth-child(1)>section li:nth-of-type(1) p:nth-of-type(2) {
+      grid-row: 3 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    /* Style du formulaire de contact */
+    main>ul>li:nth-child(2)>section p:nth-of-type(1) {
+      color: #BFBFBF;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2rem;
+      margin-bottom: 1.375rem;
+    }
+
+    main>ul>li:nth-child(2)>section  p {
+      margin-bottom: 2rem;
+    }
+
+    main>ul>li:nth-child(2)>section  li label {
+      padding-left: 10px;
+      padding-right: 10px;
+      pointer-events: none;
+      position: relative;
+      left: 12px;
+      top: 0.5rem;
+      background: #232323;
+      opacity: 1;
+      color: #CBD1DF;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+    }
+
+    input,
+    textarea {
+      background-color: #232323;
+      padding: 1rem;
+      border: 1px solid #828282;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+      width: calc(100% - 2rem);
+    }
+
+    main>ul>li:nth-child(2)>section  button {
+      padding-right: 3.5rem;
+      padding-left: 3.5rem;
+    }
+
+    /* Quelques décalages sur certains éléments */
+    main>section:nth-child(2)>div:nth-child(1)>p {
+      padding-left: 0.5rem;
+    }
+
+    main>section:nth-child(2)>div:nth-child(1) ul {
+      padding-left: 0.5rem;
+    }
+
+    main>section:nth-child(2)>div:nth-child(2)>article>p {
+      padding-left: 0.5rem;
+    }
+
+    main>section:nth-child(3) ul {
+      padding-left: 0.5rem;
+    }
+
+    main>section:nth-child(5) p {
+      padding-left: 0.5rem;
+    }
+
+    main>section:nth-child(5) h3 {
+      padding-left: 0.5rem;
+    }
+
+    main>section:nth-child(5)>div h5 {
+      padding-left: 0.5rem;
+    }
+
+    main>ul>li:nth-child(1)>section  ul {
+      padding-left: 0.5rem;
+    }
+
+    main>ul>li:nth-child(1)>section  h5 {
+      padding-left: 0.375rem;
+    }
+
+    main>ul>li:nth-child(2)>section  ul {
+      padding-left: 0.375rem;
+    }
+
+    main>ul>li:nth-child(2)>section  p {
+      padding-left: 0.5rem;
+      max-width: 17.625rem;
+    }
+
+    /* Formes dans le fond */
+
+    body>div {
+      overflow-x: hidden;
+    }
+
+    body>div>amp-img:nth-of-type(1) {
+      position: absolute;
+      top: 1.625rem;
+      left: -6rem;
+    }
+
+    body>div>amp-img:nth-of-type(2) {
+      position: absolute;
+      right: 4rem;
+      top: 25.5rem;
+    }
+
+    body>div>amp-img:nth-of-type(3) {
+      position: absolute;
+      top: 19rem;
+      left: 4.5rem;
+    }
+
+    body>div>amp-img:nth-of-type(4) {
+      position: absolute;
+      top: 4rem;
+      right: 0;
+      overflow: hidden;
+    }
+
+    /* Éléments propre à la version desktop passés en display none */
+    header>ul>li {
+      display: none;
+    }
+
+    header>amp-img:nth-of-type(2) {
+      display: none;
+    }
+
+    main>section>div:nth-child(2)>amp-img {
+      display: none;
+    }
+
+    main>section:nth-child(4) {
+      display: none;
+    }
+
+    main>section:nth-child(3)>div>button {
+      display: none;
+    }
+
+    main>section:nth-child(3)>ul>li>p {
+      display: none;
+    }
+
+    main>section:nth-child(5)>div>amp-img,
+    main>section:nth-child(5)>div>article>hr {
+      display: none;
+    }
+
+    main>ul>li:nth-child(2) h4{
+      display: none;
+    }
+
+    /* Style de la version desktop */
+
+    @media (min-width: 1024px) {
+      body {
+        padding-right: 0;
+        padding-left: 0;
+        background-color: #1f1f1f;
+      }
+
+      h5 {
+        margin-top: unset;
+      }
+
+      /* Header sur desktop */
+      header {
+        justify-content: unset;
+      }
+
+      h1 {
+        margin-right: 6.125rem;
+        margin-left: 3.75rem;
+      }
+
+      header ul {
+        display: flex;
+      }
+
+      header ul li {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+      }
+
+      header ul li:nth-of-type(1) {
+        margin-right: 4.875rem;
+      }
+
+      header ul li amp-img {
+        margin-right: 0.5rem;
+      }
+
+      header>amp-img:nth-of-type(1) {
+        display: none;
+      }
+
+      header>amp-img:nth-of-type(2) {
+        display: block;
+        margin-left: auto;
+        margin-right: 3.5rem;
+      }
+
+      header p {
+        margin-bottom: unset;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      /* Section de la page d'accueil en grid sur desktop */
+
+
+      main>section:nth-child(1)>div>p {
+        margin-bottom: 0.8125rem;
+      }
+
+      hr {
+        margin-bottom: 1.25rem;
+      }
+
+
+      main>section:nth-child(1)>div>h2 {
+        font-size: 4.5rem;
+      }
+
+
+      main>section:nth-child(1)>div>h2>span:nth-of-type(2) {
+        font-size: 4.5rem;
+      }
+
+      main>section:nth-child(1)>div>h3 {
+        width: 27.5rem;
+      }
+
+      main>section:nth-child(1) {
+        display: grid;
+        grid-template-columns: minmax(12vw, 24rem) 1fr minmax(48rem, auto);
+        grid-template-rows: 32.875rem 8.6875rem;
+        row-gap: 14rem;
+      }
+
+      main>section:nth-child(1)>div:nth-child(1) {
+        grid-column: 2/3;
+      }
+
+      main>section:nth-child(1)>div:nth-child(2) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        position: relative;
+        max-width: 48rem;
+      }
+
+      main>section:nth-child(1)>div:nth-child(2)>amp-img {
+        display: unset;
+      }
+
+      main>section:nth-child(1)>div:nth-child(2)>amp-img img {
+        object-fit: cover;
+        object-position: right top;
+      }
+
+      main>section:nth-child(1)>div:nth-child(3) {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        display: flex;
+        flex: column;
+        justify-self: center;
+        align-items: center;
+      }
+
+      main>section:nth-child(1)>div:nth-child(3)>h4 {
+        margin-bottom: 1rem;
+      }
+
+      main>section:nth-child(1)>div:nth-child(3)>ul {
+        display: unset;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+      main>section:nth-child(1)>div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        max-width: 95vw;
+        justify-self: center;
+      }
+
+      main>section:nth-child(1)>div:nth-child(3)>ul amp-img {
+        margin-right: 3.75rem;
+      }
+
+      main>section:nth-child(1)>div:nth-child(3)>ul amp-img:nth-child(6) {
+        margin-right: 0;
+      }
+
+      /* Fond desktop page accueil */
+      body>div {
+        display: none;
+      }
+
+      header {
+        background-image: url(pattern_header.svg);
+        background-position-y: center 1rem;
+        background-position-x: calc(100vw - 21rem);
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+      }
+
+
+
+      main>section:nth-child(1) {
+        padding-top: 6.25rem;
+        background-image: url(test.svg);
+        background-position-y: top;
+        background-position-x: center;
+        background-size: auto auto;
+        background-repeat: no-repeat;
+        padding-bottom: 5.75rem;
+      }
+
+      /* Section compétences */
+
+
+      main>section:nth-child(2)>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10.5rem;
+        padding-bottom: 13.5rem;
+      }
+
+      main>section:nth-child(2)>div:nth-child(1)>p {
+        width: 21.125rem;
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-left: unset;
+        margin-bottom: 7.25rem;
+      }
+
+      main>section:nth-child(2)>div:nth-child(1)>ul {
+        display: flex;
+        flex-direction: row;
+        max-width: 98vw;
+        padding-left: unset;
+        column-gap: 7.25rem;
+      }
+
+      main>section:nth-child(2)>div:nth-child(1)>ul>li {
+        width: 10.75rem;
+      }
+
+      /* Section Portfolio */
+      main>section:nth-child(2)>div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        column-gap: 4.75rem;
+        justify-content: center;
+        padding-top: 7rem;
+        padding-bottom: 14.8125rem;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul {
+        display: grid;
+        grid-template-columns: 14.1875rem 6rem 6.75rem 14.1875rem;
+        column-gap: 1.5rem;
+        grid-template-rows: 16.4375rem 16.4375rem 16.4375rem;
+        row-gap: 1.5rem;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul>li>amp-img>img {
+        object-fit: cover;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul>li {
+        position: relative;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul>li:nth-child(1) {
+        grid-row: 1/2;
+        grid-column: 1/4;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul>li:nth-child(2) {
+        grid-row: 1/2;
+        grid-column: 4/5;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul>li:nth-child(3) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul>li:nth-child(4) {
+        grid-row: 2/3;
+        grid-column: 2/5;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul>li:nth-child(5) {
+        grid-row: 3/4;
+        grid-column: 1/3;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>ul>li:nth-child(6) {
+        grid-row: 3/4;
+        grid-column: 3/5;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>article {
+        max-width: 18.5rem;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2)>article>p {
+        padding-left: unset;
+      }
+
+      /* Fond pages Compétences et Portfolio */
+      main>section:nth-child(2) {
+        background-image: url('pattern2.svg');
+        background-repeat: no-repeat;
+        background-position: 0.5rem 6%;
+        background-size: auto 43%;
+      }
+
+      main>section:nth-child(2)>div:nth-child(1) {
+        background-color: #1d1d1d;
+        position: relative;
+        z-index: -1;
+      }
+
+      main>section:nth-child(2)>div:nth-child(2) {
+        background-image: url('pattern3.svg');
+        background-repeat: no-repeat;
+        background-position: left bottom 65%;
+      }
+
+      /* Style de la page Experiences */
+      main>section:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 7.5rem;
+        max-width: 100vw;
+      }
+
+      main>section:nth-child(3)>button {
+        display: none;
+      }
+
+      main>section:nth-child(3)>div {
+        padding-top: 0.75rem;
+      }
+
+      main>section:nth-child(3)>div>button {
+        display: block;
+      }
+
+      main>section:nth-child(3)>div>p {
+        max-width: 15.125rem;
+        padding-right: unset;
+        padding-top: 0.75rem;
+        margin-bottom: 1.875rem;
+      }
+
+      main>section:nth-child(3)>ul {
+        padding-left: unset;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.25rem;
+      }
+
+
+
+      main>section:nth-child(3)>ul>li {
+        grid-template-columns: 24px 1fr 1fr;
+        grid-template-rows: 1.875rem auto;
+        column-gap: 4.75rem;
+        align-items: flex-start;
+        margin-bottom: 0;
+        row-gap: 0.75rem;
+        padding-bottom: 2.25rem;
+        border-bottom: 1px solid rgba(173, 181, 189, 0.16);
+      }
+
+      main>section:nth-child(3)>ul>li>p {
+        display: block;
+        max-width: 20.625rem;
+        grid-row: 1/3;
+        grid-column: 3/4;
+        margin-bottom: 0;
+
+      }
+
+      main>section:nth-child(3)>ul>li>h4 {
+        line-height: 1.5rem;
+        align-self: center;
+      }
+
+      /* Style de la deuxième page de Compétences */
+      main>section:nth-child(4) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5.75rem;
+        padding-top: 16.875rem;
+        padding-bottom: 6.875rem;
+      }
+
+      main>section:nth-child(4)>ul {
+        display: flex;
+        max-width: 42rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+      }
+
+      main>section:nth-child(4)>div {
+        max-width: 20.5rem;
+      }
+
+      main>section:nth-child(4)>ul>li {
+        display: flex;
+        flex-direction: row;
+        height: 3.75rem;
+        background-color: #2C2C2C;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(1) {
+        width: 18.75rem;
+        border-radius: 8px;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(2) {
+        width: 21.75rem;
+        border-radius: 8px;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(3) {
+        width: 14.125rem;
+        border-radius: 12px;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(4) {
+        width: 18.75rem;
+        border-radius: 12px;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(5) {
+        width: 18rem;
+        border-radius: 8px;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(6) {
+        width: 18rem;
+        border-radius: 10px;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(7) {
+        width: 30.125rem;
+        border-radius: 10px;
+      }
+
+      main>section:nth-child(4)>ul>li>article {
+        display: flex;
+        align-items: center;
+      }
+
+      main>section:nth-child(4)>ul>li>article>amp-img {
+        padding-left: 1.5rem;
+        padding-right: 2rem;
+      }
+
+      main>section:nth-child(4)>ul>li>p {
+        margin-bottom: unset;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        background-color: #F87F28;
+        border-radius: 30px;
+        color: #2C2C2C;
+      }
+
+      main>section:nth-child(4)>ul>li>article>h6 {
+        margin-top: unset;
+        margin-bottom: unset;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(1)>p {
+        margin-right: 1.5rem;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(2)>p {
+        margin-right: 1.125rem;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(3)>p {
+        margin-right: 1rem;
+
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(4)>p {
+        margin-right: 1.5rem;
+        font-weight: 800;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(5)>p {
+        margin-right: 0.75rem;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(6)>p {
+        margin-right: 1.125rem;
+      }
+
+      main>section:nth-child(4)>ul>li:nth-child(7)>p {
+        margin-right: 1rem;
+      }
+
+      /* Style de la page Témoignages */
+      main>section:nth-child(5) {
+        background-color: #1D1D1D;
+        background-image: url("pattern4.svg");
+        background-repeat: no-repeat;
+        background-size: 95% auto;
+        background-position: bottom center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10.25rem;
+        padding-bottom: 12rem;
+      }
+
+      main>section:nth-child(5)>div>amp-img {
+        display: block;
+      }
+
+      main>section:nth-child(5)>div {
+        display: flex;
+        column-gap: 2.5rem;
+        align-self: center;
+      }
+
+      main>section:nth-child(5)>div p {
+        max-width: 42.375rem;
+        padding-top: 0.5rem;
+        padding-left: 0;
+        margin-bottom: 1rem;
+      }
+
+      main>section:nth-child(5)>div h3 {
+        padding-left: 0;
+        margin-bottom: 0.3125rem;
+      }
+
+      main>section:nth-child(5)>div h5 {
+        padding-left: 0;
+        margin: unset;
+      }
+
+      main>section:nth-child(5)>div>article>hr {
+        width: 2.375rem;
+        border: 1px solid #F87F28;
+        display: block;
+        margin: unset;
+        margin-bottom: 1.25rem;
+      }
+
+      /* Style de la page Actualités */
+      main>section:nth-child(6) {
+        padding-top: 7.625rem;
+        padding-bottom: 8.875rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 6rem;
+        background: bottom -3.5rem right 28% url('pattern5.svg');
+        background-size: 73% 105%;
+        background-repeat: no-repeat;
+      }
+
+      main>section:nth-child(6)>div>h5 {
+        padding-bottom: 1.125rem;
+      }
+
+      main>section:nth-child(6) p {
+        max-width: 32.625rem;
+      }
+
+      main>section:nth-child(6) h5 {
+        line-height: 1rem;
+      }
+
+      main>section:nth-child(6) h3 {
+        line-height: 1.625rem;
+        margin-bottom: 0.75rem;
+      }
+
+      main>section:nth-child(6) li>p {
+        margin-bottom: 2.5rem;
+      }
+
+      main>section:nth-child(6) li:last-child>p {
+        margin-bottom: unset;
+      }
+
+
+
+      /* Style de la page Contact */
+      main>ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 12.125rem;
+        background-color: #1D1D1D;
+        align-items: center;
+      }
+
+      main>ul>li:nth-child(1)>section h5{
+        line-height: 3.75rem;
+        margin-bottom: 1.625rem;
+        padding-left: unset;
+      }
+
+      main>ul>li:nth-child(1)>section h6{
+        line-height: 1.5rem;
+        padding-top: 0.25rem;
+      }
+
+      main>ul>li:nth-child(1)>section ul{
+        padding-left: unset;
+      }
+
+      main>ul>li:nth-child(1)>section li p{
+        font-size: 1.5rem;
+      }
+
+      main>ul>li:nth-child(2) h4{
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+      }
+
+      main>ul>li:nth-child(2)>section p{
+        padding-left: unset;
+        max-width: 32.625rem;
+      }
+
+      main>ul>li:nth-child(2)>section p:nth-of-type(1){
+        max-width:21.5625rem;
+      }
+
+      main>ul>li:nth-child(2)>section ul{
+        padding-left: unset;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Header version mobile -->
+  <header>
+    <h1>Olivier.</h1>
+
+    <!-- Éléments du header seulement sur desktop -->
+    <ul>
+      <li>
+        <amp-img src="phone_desktop.svg" width="22" height="22" alt="Une icône de téléphone">
+        </amp-img>
+        <p>+98 76-54-1423</p>
+      </li>
+      <li>
+        <amp-img src="enveloppe_desktop.svg" width="18" height="18" alt="Une icône d'enveloppe">
+        </amp-img>
+        <p>olivier.depiesse@gmail.com</p>
+      </li>
+    </ul>
+
+    <!-- Balise amp-img en AMP -->
+    <amp-img src="burger.svg" width="50" height="50" alt="Menu burger">
+    </amp-img>
+    <amp-img src="burger_desktop.svg" width="24" height="20" alt="Menu burger">
+    </amp-img>
+  </header>
+
+
+  <!-- Formes dans le fond -->
+  <div>
+    <amp-img src="forme_tel1.svg" width="132" height="126" alt="Sphère rayée">
+    </amp-img>
+    <amp-img src="grey_cross.svg" width="14" height="14" alt="Un signe plus, gris">
+    </amp-img>
+    <amp-img src="orange_cross.svg" width="14" height="14" alt="Un signe plus, orange">
+    </amp-img>
+    <amp-img src="fond_arc_tel.svg" width="49" height="781" alt="Forme bleue arquée">
+    </amp-img>
+  </div>
+  <main>
+
+    <!-- Création d'une section par page pour la version desktop -->
+    <section>
+
+      <!-- Accueil, création d'une div pour le display flex en version desktop -->
+      <div>
+        <p>JE SUIS FULLSTACK DESIGNER</p>
+        <hr>
+        <h2><span>Hola, mi nombre es </span><span>Olivier.</span></h2>
+
+        <!-- Les deux éléments du fond seront en position absolute sur mobile -->
+
+        <h3>Développement : Environnement LAMP, Zend Framework, ExtJS, Webservices, AMFPHP, API Google Maps, Facebook
+          Open
+          Graph, API Twitter</h3>
+
+        <h3>Directeur technique Webedia Madrid</h3>
+
+        <!-- Utilisation de ul pour éviter le surplus de div, display:grid -->
+        <ul>
+          <li><button>Portfolio</button></li>
+          <li><button>Contact</button></li>
+        </ul>
+      </div>
+      <!-- Photo seulement disponible sur desktop -->
+      <div>
+        <amp-img src="photo.webp" layout="fill" alt="Une photo d'un jeune homme">
+        </amp-img>
+      </div>
+
+
+      <div>
+        <h4>CLIENTS</h4>
+        <!-- Utilisation de ul pour les mêmes raisons -->
+        <ul>
+          <li>
+            <amp-img src="sega.webp" width="111" height="37" alt="Logo de Sega">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="ubisoft.webp" width="83" height="76" alt="Logo de Ubisoft">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="microsoft.webp" width="141" height="84" alt="Logo de Microsoft">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="electronic.webp" width="152" height="86" alt="Logo d'Electronic Arts">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="capcom.webp" width="131" height="24" alt="Logo de Capcom">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="bethesda.webp" width="159" height="23" alt="Logo de Bethesda">
+            </amp-img>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Grande section comprenant la page Compétences et la page Portfolio -->
+    <section>
+
+      <!-- Section pour la page Compétences -->
+      <div>
+        <!-- Compétences -->
+        <h5>Compétences</h5>
+        <hr>
+        <p>It doesn’t matter how great your product or service is if your copy does not captivate your audience.</p>
+
+        <!-- Liste afin de bien les placer -->
+        <ul>
+          <li>
+
+            <amp-img src="technique.webp" width="52" height="52" alt="Logo représentant une cible"></amp-img>
+            <h6>Technique</h6>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+
+          </li>
+          <li>
+
+            <amp-img src="gestion.webp" width="52" height="52" alt="Logo représentant un stylo"></amp-img>
+            <h6>Gestion de projet</h6>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+
+          </li>
+          <li>
+
+            <amp-img src="management.webp" width="52" height="52" alt="Logo représentant une étoile"></amp-img>
+            <h6>Management</h6>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+          </li>
+          <li>
+
+            <amp-img src="langues.webp" width="52" height="52" alt="Logo représentant un réseau"></amp-img>
+            <h6>Langues</h6>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section pour la page Portfolio -->
+      <div>
+        <!-- Portfolio -->
+
+        <article>
+          <h5>Portfolio</h5>
+          <hr>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem, It doesn’t matter how great your product or
+            service
+            is
+            if your copy does not captivate your audience.</p>
+        </article>
+        <ul>
+          <li>
+            <amp-img src="cosmonaute.webp" width="314" height="172" layout="fill"
+              alt="Un astronaute en combinaison sur fond bleu">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="fauteuil.webp" width="314" height="266" layout="fill"
+              alt="Image d'un bureau avec un ordinateur portable et un fauteuil devant">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="peinture.webp" width="311" height="264" layout="fill"
+              alt="Photo avec un sceau de peinture verte, un pinceau et une brique d'eau de marque Hello">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="brique.webp" width="314" height="264" layout="fill"
+              alt="Une brique d'eau de marque Hello avec marqué dessus : 'BOXED WATER IS BETTER.'">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="machine.webp" width="314" height="264" layout="fill" alt="Une machine à écrire">
+            </amp-img>
+          </li>
+          <li>
+            <amp-img src="orange.webp" width="314" height="264" layout="fill"
+              alt="Une orange à la peau bleue coupée en deux">
+            </amp-img>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section Expériences -->
+    <section>
+
+      <!-- Experiences -->
+      <div>
+        <h5>Experiences</h5>
+        <hr>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem, It doesn’t matter
+          how
+          great your product or service is
+          if your copy does not captivate your audience.</p>
+        <button>Download Resume</button>
+      </div>
+      <ul>
+        <li>
+
+          <amp-img src="page_web.svg" width="24" height="24" alt="Un logo de page web">
+          </amp-img>
+          <h4>AUJOURD'HUI</h4>
+          <h3>Web Developer</h3>
+          <p>Au sein du pôle R+D, développement et amélioration du framework maison et du backoffice. Création d'un
+            outil d'analyse des logs d'accès crawlers</p>
+        </li>
+        <li>
+
+          <amp-img src="directeur.svg" width="24" height="24" alt="Un logo représentant le fait de diriger un projet">
+          </amp-img>
+          <h4>MAI 2010 - AVRIL 2021</h4>
+          <h3>Directeur de projet Web</h3>
+          <p>Mise en place de la méthodologie et des processus de développement - SVN, Trac, Hudson
+          </p>
+        </li>
+        <li>
+
+          <amp-img src="web_arrow.svg" width="24" height="24"
+            alt="Une flèche représentant la navigation sur une page web">
+          </amp-img>
+          <h4>SEPT 2008 - MAI 2009</h4>
+          <h3>Web Developer</h3>
+          <p>Création de sites et de jeux concours principalement dans le domaine des jeux vidéos : Sega, Ubisoft,
+            Microsoft, Electronic Arts, Capcom, Bethesda</p>
+        </li>
+      </ul>
+
+      <button>Download Resume</button>
+    </section>
+
+    <!-- Section deuxième page Compétences, seulement sur desktop -->
+    <section>
+      <ul>
+        <li>
+          <article>
+            <amp-img src="angular.svg" width="22" height="24" alt="Logo d'Angular">
+            </amp-img>
+            <h6>Angular</h6>
+          </article>
+          <p>80%</p>
+        </li>
+        <li>
+          <article>
+            <amp-img src="react.svg" width="24" height="21" alt="Logo de React">
+            </amp-img>
+            <h6>React</h6>
+          </article>
+          <p>90%</p>
+        </li>
+        <li>
+          <article>
+            <amp-img src="node.svg" width="24" height="24" alt="Logo de Node.js">
+            </amp-img>
+            <h6>Node JS</h6>
+          </article>
+          <p>60%</p>
+        </li>
+        <li>
+          <article>
+            <amp-img src="management.svg" width="23" height="24" alt="Logo représentant l'organisation">
+            </amp-img>
+            <h6>Management</h6>
+          </article>
+          <p>70%</p>
+        </li>
+        <li>
+          <article>
+            <amp-img src="analytics.svg" width="24" height="24" alt="Logo représentant un camembert de statistiques">
+            </amp-img>
+            <h6>Analytics</h6>
+          </article>
+          <p>90%</p>
+        </li>
+        <li>
+          <article>
+            <amp-img src="brainstorming.svg" width="18" height="24" alt="Logo d'une ampoule représentant une idée">
+            </amp-img>
+            <h6>Brainstorming</h6>
+          </article>
+          <p>60%</p>
+        </li>
+        <li>
+          <article>
+            <amp-img src="execution.svg" width="20" height="20" alt="Logo représentant des ciseaux pour le fait d'agir">
+            </amp-img>
+            <h6>Execution</h6>
+          </article>
+          <p>100%</p>
+        </li>
+      </ul>
+      <div>
+        <h5>Compétences</h5>
+        <hr>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem, It doesn’t matter how great your product or
+          service
+          is if your copy does not captivate your audience.</p>
+      </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section>
+      <!-- Témoignages -->
+      <h5>Témoignages</h5>
+      <hr>
+      <div>
+        <amp-img src="photo_temoignages.webp" width="130" height="134"
+          alt="Photo d'un jeune homme heureux avec un pouce en l'air">
+        </amp-img>
+        <article>
+          <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+            quam,
+            ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+          </p>
+          <hr>
+          <h3>Saul Goodman</h3>
+          <h5>Ceo And Founder</h5>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section Actualités -->
+    <section>
+      <!-- Actualités -->
+      <div>
+        <h5>Actualités</h5>
+        <hr>
+      </div>
+      <ul>
+        <li>
+          <h5>19 AOÛT 2014</h5>
+          <h3>OMOTE / REAL-TIME FACE TRACKING &amp PEOJECTION MAPPING</h3>
+          <p>LIVE INSTALLATION ON 2014/8/28connpass.com/event/8112/ PROJECT MEMBERS NOBUMICHI ASAI (PLANNER / PRODUCER /
+            TECHNICAL...</p>
+        </li>
+        <li>
+          <h5>08 NOVEMBRE 2013</h5>
+          <h3>Forest</h3>
+          <p>Movie : Takeshi Tsunehashi d&#8209;apartment.net - The post Forest first appeared on Yop Concept.</p>
+        </li>
+        <li>
+          <h5>18 OCTOBRE 2013</h5>
+          <h3>Atoms For Peace – Before Your Very Eyes</h3>
+          <p>Vous trouverez ici le making-of : http://www.youtube.com/watch<span>?v=mfWNvhgHV3A...</span></p>
+        </li>
+      </ul>
+    </section>
+
+    <ul>
+      <li>
+        <!-- Section Contact -->
+        <section>
+          <!-- Contact -->
+          <h5>Contact.</h5>
+          <ul>
+            <li>
+              <amp-img src="map.svg" width="42" height="42" alt="Logo de map">
+              </amp-img>
+              <article>
+                <h6>Adresse</h6>
+                <p>36 rue des Peupliers</p>
+                <p>Paris (75018) France</p>
+              </article>
+            </li>
+            <li>
+              <amp-img src="mail.svg" width="42" height="42" alt="Logo représentant un mail">
+              </amp-img>
+              <article>
+                <h6>Mail</h6>
+                <p>olivier.depiesse@gmail.com</p>
+              </article>
+            </li>
+            <li>
+              <amp-img src="phone.svg" width="42" height="42" alt="Logo représentant un téléphone">
+              </amp-img>
+              <article>
+                <h6>Téléphone</h6>
+                <p>06 54 84 54 75</p>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </li>
+
+      <!-- Section formulaire de contact -->
+      <li>
+        <section>
+
+          <!-- Formulaire de contact -->
+          <h4>CONTACTEZ-MOI</h4>
+          <p>Utilisez le formulaire ci&#8209;dessous pour me contacter</p>
+          <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis
+            imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue..</p>
+          <ul>
+            <li>
+              <label for="name">Votre nom :</label>
+              <input type="text" id="name">
+            </li>
+            <li>
+              <label for="mail">Votre email :</label>
+              <input type="text" id="mail">
+            </li>
+            <li>
+              <label for="message">Message :</label>
+              <textarea name="message" id="message" rows="10"></textarea>
+            </li>
+          </ul>
+
+          <button>Envoyer</button>
+        </section>
+      </li>
+    </ul>
+  </main>
+</body>
+
+</html>
